@@ -11,7 +11,7 @@ bot =  telebot.TeleBot(TOKEN, parse_mode=None)
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
     username = message.from_user.username
-    reply = f"sdfsfsfsf alaykum, {username}\n" 
+    reply = f"Assalamu alaykum, {username}\n" 
     reply1 = f"Botimizga xush kelibsiz!"
 
     bot.reply_to(message, reply)
