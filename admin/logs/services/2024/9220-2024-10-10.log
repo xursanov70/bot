@@ -103,3 +103,7 @@
 [10/Oct/2024:12:36:32 +0200] [1363951] jasurbot_test - service: 9220 started (command: 'python game.py' - pid: 1363951)
 [10/Oct/2024:12:36:32 +0200] [1363951] jasurbot_test - service: 9220 finished after 0.003 seconds (uncaught signal SIGTERM) (command: 'python game.py' - pid: 1363951)
 [10/Oct/2024:12:36:34 +0200] [1363959] jasurbot_test - service: 9220 started (command: 'python game.py' - pid: 1363959)
+[10/Oct/2024:12:38:24 +0200] [1363959] jasurbot_test - service: 9220 restart requested
+[10/Oct/2024:12:38:25 +0200] [1364165] jasurbot_test - service: 9220 started (command: 'python game.py' - pid: 1364165)
+[10/Oct/2024:12:38:25 +0200] [1364165] jasurbot_test - service: 9220 finished after 0.004 seconds (uncaught signal SIGTERM) (command: 'python game.py' - pid: 1364165)
+[10/Oct/2024:12:38:26 +0200] [1364174] jasurbot_test - service: 9220 started (command: 'python game.py' - pid: 1364174)
