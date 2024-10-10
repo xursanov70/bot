@@ -1,3 +1,6 @@
 [safe]
 	derectory = /home/jasurbot_test
 	directory = /home/jasurbot
+[user]
+	name = jasurbot_test
+	email = jasurxursanov20030214@gmail.com
