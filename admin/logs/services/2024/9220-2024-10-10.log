@@ -99,3 +99,7 @@
 [10/Oct/2024:12:14:51 +0200] [1359992] STDERR:     raise ApiTelegramException(method_name, result, result_json)
 [10/Oct/2024:12:14:51 +0200] [1359992] STDERR: telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
 [10/Oct/2024:12:14:51 +0200] [1359992] STDERR: "
+[10/Oct/2024:12:36:31 +0200] [1359992] jasurbot_test - service: 9220 restart requested
+[10/Oct/2024:12:36:32 +0200] [1363951] jasurbot_test - service: 9220 started (command: 'python game.py' - pid: 1363951)
+[10/Oct/2024:12:36:32 +0200] [1363951] jasurbot_test - service: 9220 finished after 0.003 seconds (uncaught signal SIGTERM) (command: 'python game.py' - pid: 1363951)
+[10/Oct/2024:12:36:34 +0200] [1363959] jasurbot_test - service: 9220 started (command: 'python game.py' - pid: 1363959)
