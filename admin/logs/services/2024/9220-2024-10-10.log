@@ -1,0 +1,101 @@
+[10/Oct/2024:12:14:33 +0200] [1359992] jasurbot_test - service: 9220 started (command: 'python game.py' - pid: 1359992)
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR: 2024-10-10 12:14:37,212 (__init__.py:1241 MainThread) ERROR - TeleBot: "Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR: 2024-10-10 12:14:37,213 (__init__.py:1243 MainThread) ERROR - TeleBot: "Exception traceback:
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR: Traceback (most recent call last):
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR:     polling_thread.raise_exceptions()
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/util.py", line 111, in raise_exceptions
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR:     raise self.exception_info
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/util.py", line 93, in run
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR:     task(*args, **kwargs)
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR:     updates = self.get_updates(offset=(self.last_update_id + 1),
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/__init__.py", line 660, in get_updates
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR:     json_updates = apihelper.get_updates(
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR:                    ^^^^^^^^^^^^^^^^^^^^^^
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/apihelper.py", line 330, in get_updates
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR:     return _make_request(token, method_url, params=payload)
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/apihelper.py", line 168, in _make_request
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR:     json_result = _check_result(method_name, result)
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/apihelper.py", line 195, in _check_result
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR:     raise ApiTelegramException(method_name, result, result_json)
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR: telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[10/Oct/2024:12:14:37 +0200] [1359992] STDERR: "
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR: 2024-10-10 12:14:41,025 (__init__.py:1241 MainThread) ERROR - TeleBot: "Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR: 2024-10-10 12:14:41,026 (__init__.py:1243 MainThread) ERROR - TeleBot: "Exception traceback:
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR: Traceback (most recent call last):
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR:     polling_thread.raise_exceptions()
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/util.py", line 111, in raise_exceptions
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR:     raise self.exception_info
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/util.py", line 93, in run
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR:     task(*args, **kwargs)
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR:     updates = self.get_updates(offset=(self.last_update_id + 1),
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/__init__.py", line 660, in get_updates
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR:     json_updates = apihelper.get_updates(
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR:                    ^^^^^^^^^^^^^^^^^^^^^^
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/apihelper.py", line 330, in get_updates
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR:     return _make_request(token, method_url, params=payload)
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/apihelper.py", line 168, in _make_request
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR:     json_result = _check_result(method_name, result)
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/apihelper.py", line 195, in _check_result
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR:     raise ApiTelegramException(method_name, result, result_json)
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR: telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[10/Oct/2024:12:14:41 +0200] [1359992] STDERR: "
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR: 2024-10-10 12:14:45,580 (__init__.py:1241 MainThread) ERROR - TeleBot: "Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR: 2024-10-10 12:14:45,580 (__init__.py:1243 MainThread) ERROR - TeleBot: "Exception traceback:
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR: Traceback (most recent call last):
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR:     polling_thread.raise_exceptions()
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/util.py", line 111, in raise_exceptions
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR:     raise self.exception_info
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/util.py", line 93, in run
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR:     task(*args, **kwargs)
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR:     updates = self.get_updates(offset=(self.last_update_id + 1),
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/__init__.py", line 660, in get_updates
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR:     json_updates = apihelper.get_updates(
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR:                    ^^^^^^^^^^^^^^^^^^^^^^
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/apihelper.py", line 330, in get_updates
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR:     return _make_request(token, method_url, params=payload)
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/apihelper.py", line 168, in _make_request
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR:     json_result = _check_result(method_name, result)
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/apihelper.py", line 195, in _check_result
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR:     raise ApiTelegramException(method_name, result, result_json)
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR: telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[10/Oct/2024:12:14:45 +0200] [1359992] STDERR: "
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR: 2024-10-10 12:14:51,643 (__init__.py:1241 MainThread) ERROR - TeleBot: "Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR: 2024-10-10 12:14:51,644 (__init__.py:1243 MainThread) ERROR - TeleBot: "Exception traceback:
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR: Traceback (most recent call last):
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/__init__.py", line 1234, in __threaded_polling
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR:     polling_thread.raise_exceptions()
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/util.py", line 111, in raise_exceptions
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR:     raise self.exception_info
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/util.py", line 93, in run
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR:     task(*args, **kwargs)
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/__init__.py", line 688, in __retrieve_updates
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR:     updates = self.get_updates(offset=(self.last_update_id + 1),
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/__init__.py", line 660, in get_updates
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR:     json_updates = apihelper.get_updates(
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR:                    ^^^^^^^^^^^^^^^^^^^^^^
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/apihelper.py", line 330, in get_updates
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR:     return _make_request(token, method_url, params=payload)
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/apihelper.py", line 168, in _make_request
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR:     json_result = _check_result(method_name, result)
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR:   File "/home/jasurbot/.local/lib/python3.12/site-packages/telebot/apihelper.py", line 195, in _check_result
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR:     raise ApiTelegramException(method_name, result, result_json)
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR: telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+[10/Oct/2024:12:14:51 +0200] [1359992] STDERR: "
