@@ -7,8 +7,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-
-
 db = mysql.connector.connect(
     host="127.0.0.1",
     user="root",
@@ -129,24 +127,20 @@ def guess_number(message, rand_number, guesses):
 def show_results(message):
     chat_id = message.from_user.id
     
-    # Fetch top 10 results
     cursor.execute("SELECT name, attempt, game_count FROM users ORDER BY attempt DESC LIMIT 10")
     top_results = cursor.fetchall()
     
-    # Fetch the current user's result (you can customize this query based on how user info is stored)
     cursor.execute("SELECT name, attempt, game_count FROM users WHERE chat_id = %s", (chat_id,))
     my_result = cursor.fetchone()
 
     result_message = "Natijalar:\n"
     
-    # Display the top 10 results
     if top_results:
         for idx, (name, attempt, game_count) in enumerate(top_results, start=1):
             result_message += f"{idx}. ismi: {name}\n o'yin soni: {game_count}\n urinish: {attempt}\n"
     else:
         result_message = "Natijalar hozircha mavjud emas.\n"
 
-    # Add the current user's result with a special label if it exists
     if my_result:
         name, attempt, game_count = my_result
         result_message += f"\n{idx}. ismi: {name}\n o'yinlar soni: {game_count}\n urinishlar soni: {attempt}\n"
@@ -155,7 +149,6 @@ def show_results(message):
 
     bot.send_message(message.chat.id, result_message)
 
-    # Show the game and results options again after showing results
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
     game_button = types.KeyboardButton("start game")
     result_button = types.KeyboardButton("results")
