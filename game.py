@@ -15,7 +15,7 @@ db = mysql.connector.connect(
 )
 cursor = db.cursor()
 
-TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
+TOKEN = '7595025500:AAECCQ5VF1-G6UcLAUJYQLP8nUZ4kz86ifw'
 bot = telebot.TeleBot(TOKEN, parse_mode=None)
 
 @bot.message_handler(commands=['start', 'help'])
