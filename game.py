@@ -7,15 +7,17 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# MySQL Connection
 db = mysql.connector.connect(
-    host="127.0.0.1",
-    user="root",
-    password="123",
-    database="game-bot"
+    host=os.getenv("DB_HOST"),
+    user=os.getenv("DB_USER"),
+    password=os.getenv("DB_PASSWORD"),
+    database=os.getenv("DB_NAME")
 )
 cursor = db.cursor()
 
-TOKEN = '7595025500:AAECCQ5VF1-G6UcLAUJYQLP8nUZ4kz86ifw'
+# Bot Token from .env
+TOKEN = os.getenv("TOKEN")
 bot = telebot.TeleBot(TOKEN, parse_mode=None)
 
 @bot.message_handler(commands=['start', 'help'])
